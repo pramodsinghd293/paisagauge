@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up | PaisaGauge</title>
+  <meta name="description" content="Create a free PaisaGauge account on this device to personalise your calculator workspace.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app-header"></div>
+  <div class="auth-page">
+    <div class="auth-art"><img src="assets/auth-hero.png" alt="Create account"></div>
+    <div class="auth-form">
+      <form class="form-card" id="signup-form">
+        <h1>Create your account</h1>
+        <p class="muted">Free signup. Password is hashed in the browser; we do not send data to a server.</p>
+        <div id="form-msg" class="alert hidden"></div>
+        <label for="name">Full name</label>
+        <input class="input" id="name" name="name" required placeholder="Your name">
+        <label for="email">Email</label>
+        <input class="input" id="email" name="email" type="email" required placeholder="you@email.com">
+        <label for="password">Password</label>
+        <input class="input" id="password" name="password" type="password" required minlength="6" placeholder="At least 6 characters">
+        <button class="btn btn-primary btn-full" style="margin-top:18px" type="submit">Sign up</button>
+        <p class="note">Already have an account? <a href="login.html"><b>Log in</b></a></p>
+      </form>
+    </div>
+  </div>
+  <div id="app-footer"></div>
+  <script src="js/engine.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/core.js"></script>
+</body>
+</html>
